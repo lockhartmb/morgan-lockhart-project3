@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,247 +10,423 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
-        <h1>You think you know The Office?</h1>
-        <a href="#question1">Take the quiz!</a>
+        <div class="wrapper">
+            <h1>World's</h1>
+            <h1>best</h1>
+            <h1>The Office</h1>
+            <h1>trivia game</h1>
+            <a href="#question1" class="take-quiz">Take the quiz!</a>
+        </div>
     </header>
 
     <main>
-        
-        <form action="" method="POST" name="quiz" id="quiz">
-            
-            <!-- QUESTION 1 -->
-            <fieldset class="question1" id="question1">
-                
-                <p>Question #1</p>
+        <div class="wrapper">
 
-                <input type="radio" id="response1-1" name="question1" value="correct">
-                <label for="response1-1">Response 1</label>
+            <form action="" method="POST" name="question1" id="question1" class="question">
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/dwight.jpeg" alt="Dwight Schrute">
+                </div>
 
-                <input type="radio" id="response1-2" name="question1" value="incorrect">
-                <label for="response1-2">Response 2</label>
+                <p>How long does it take Dwight to skin a mule deer?</p>
 
-                <input type="radio" id="response1-3" name="question1" value="incorrect">
-                <label for="response1-3">Response 3</label>
+                <div class="options">
+                    <input type="radio" id="response1-1" name="question1" value="0">
+                    <label for="response1-1">3.5 minutes</label>
 
-                <input type="radio" id="response1-4" name="question1" value="incorrect">
-                <label for="response1-4">Response 4</label>
+                    <input type="radio" id="response1-2" name="question1" value="0">
+                    <label for="response1-2">18 minutes</label>
 
-                <a href="#question2">Next question</a>
+                    <input type="radio" id="response1-3" name="question1" value="1">
+                    <label for="response1-3">Less than 10 minutes</label>
 
-            </fieldset>
+                    <input type="radio" id="response1-4" name="question1" value="0">
+                    <label for="response1-4">Around half an hour</label>
+                </div>
+                <div class="error"></div>
 
-            <!-- QUESTION 2 -->
-            <fieldset class="question2" id="question2">
-                
-                <p>Question #2</p>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question1" data-place="#question2">
+                </div>
 
-                <input type="radio" id="response2-1" name="question2" value="correct">
-                <label for="response2-1">Response 1</label>
+            </form>
 
-                <input type="radio" id="response2-2" name="question2" value="incorrect">
-                <label for="response2-2">Response 2</label>
+            <form action="" method="POST" name="question2" id="question2" class="question">
 
-                <input type="radio" id="response2-3" name="question2" value="incorrect">
-                <label for="response2-3">Response 3</label>
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/mose.jpg" alt="Mose Schrute">
+                </div>
 
-                <input type="radio" id="response2-4" name="question2" value="incorrect">
-                <label for="response2-4">Response 4</label>
+                <p>What are the consequences when a Schrute boy does not learn his rules?</p>
 
-                <a href="#question3">Next question</a>
+                <div class="options">
+                    <input type="radio" id="response2-1" name="question2" value="0">
+                    <label for="response2-1">He does Michael's laundry for a month</label>
 
-            </fieldset>
+                    <input type="radio" id="response2-2" name="question2" value="1">
+                    <label for="response2-2">He is eaten in his sleep</label>
 
-            <!-- QUESTION 3 -->
-            <fieldset class="question3" id="question3">
-                
-                <p>Question #3</p>
+                    <input type="radio" id="response2-3" name="question2" value="0">
+                    <label for="response2-3">He is whipped by the Belschnickel</label>
 
-                <input type="radio" id="response3-1" name="question3" value="correct">
-                <label for="response3-1">Response 1</label>
+                    <input type="radio" id="response2-4" name="question2" value="0">
+                    <label for="response2-4">He is eaten by a wolf</label>
+                </div>
+                <div class="error"></div>
 
-                <input type="radio" id="response3-2" name="question3" value="incorrect">
-                <label for="response3-2">Response 2</label>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question2" data-place="#question3">
+                </div>
 
-                <input type="radio" id="response3-3" name="question3" value="incorrect">
-                <label for="response3-3">Response 3</label>
+            </form>
 
-                <input type="radio" id="response3-4" name="question3" value="incorrect">
-                <label for="response3-4">Response 4</label>
+            <form action="" method="POST" name="question3" id="question3" class="question">
 
-                <a href="#question4">Next question</a>
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/pam.jpg" alt="Pam Beesly">
+                </div>
 
-            </fieldset>
+                <p>What is Pam's middle name?</p>
 
-            <!-- QUESTION 4 -->
-            <fieldset class="question4" id="question4">
-                
-                <p>Question #4</p>
+                <div class="options">
+                    <input type="radio" id="response3-1" name="question3" value="0">
+                    <label for="response3-1">Jenny</label>
 
-                <input type="radio" id="response4-1" name="question4" value="correct">
-                <label for="response4-1">Response 1</label>
+                    <input type="radio" id="response3-2" name="question3" value="0">
+                    <label for="response3-2">Zoe</label>
 
-                <input type="radio" id="response4-2" name="question4" value="incorrect">
-                <label for="response4-2">Response 2</label>
+                    <input type="radio" id="response3-3" name="question3" value="0">
+                    <label for="response3-3">Marie</label>
 
-                <input type="radio" id="response4-3" name="question4" value="incorrect">
-                <label for="response4-3">Response 3</label>
+                    <input type="radio" id="response3-4" name="question3" value="1">
+                    <label for="response3-4">Morgan</label>
+                </div>
+                <div class="error"></div>
 
-                <input type="radio" id="response4-4" name="question4" value="incorrect">
-                <label for="response4-4">Response 4</label>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question3" data-place="#question4">
+                </div>
 
-                <a href="#question5">Next question</a>
+            </form>
 
-            </fieldset>
+            <form action="" method="POST" name="question4" id="question4" class="question">
 
-            <!-- QUESTION 5 -->
-            <fieldset class="question5" id="question5">
-                
-                <p>Question #5</p>
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/kevin.jpeg" alt="Kevin Malone">
+                </div>
 
-                <input type="radio" id="response5-1" name="question5" value="correct">
-                <label for="response5-1">Response 1</label>
+                <p>Kevin describes himself as a "textbook _____"</p>
 
-                <input type="radio" id="response5-2" name="question5" value="incorrect">
-                <label for="response5-2">Response 2</label>
+                <div class="options">
+                    <input type="radio" id="response4-1" name="question4" value="1">
+                    <label for="response4-1">over-thinker</label>
 
-                <input type="radio" id="response5-3" name="question5" value="incorrect">
-                <label for="response5-3">Response 3</label>
+                    <input type="radio" id="response4-2" name="question4" value="0">
+                    <label for="response4-2">over-achiever</label>
 
-                <input type="radio" id="response5-4" name="question5" value="incorrect">
-                <label for="response5-4">Response 4</label>
+                    <input type="radio" id="response4-3" name="question4" value="0">
+                    <label for="response4-3">over-eater</label>
 
-                <a href="#question6">Next question</a>
+                    <input type="radio" id="response4-4" name="question4" value="0">
+                    <label for="response4-4">over-doer</label>
+                </div>
+                <div class="error"></div>
 
-            </fieldset>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question4" data-place="#question5">
+                </div>
 
-            <!-- QUESTION 6 -->
-            <fieldset class="question6" id="question6">
-                
-                <p>Question #6</p>
+            </form>
 
-                <input type="radio" id="response6-1" name="question6" value="correct">
-                <label for="response6-1">Response 1</label>
+            <form action="" method="POST" name="question5" id="question5" class="question">
 
-                <input type="radio" id="response6-2" name="question6" value="incorrect">
-                <label for="response6-2">Response 2</label>
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/oscar.jpg" alt="Oscar Martinez">
+                </div>
 
-                <input type="radio" id="response6-3" name="question6" value="incorrect">
-                <label for="response6-3">Response 3</label>
+                <p>What costume wins Oscar the Halloween costume contest?</p>
 
-                <input type="radio" id="response6-4" name="question6" value="incorrect">
-                <label for="response6-4">Response 4</label>
+                <div class="options">
+                    <input type="radio" id="response5-1" name="question5" value="0">
+                    <label for="response5-1">Gordon Gecko</label>
 
-                <a href="#question7">Next question</a>
+                    <input type="radio" id="response5-2" name="question5" value="1">
+                    <label for="response5-2">A rational consumer</label>
 
-            </fieldset>
+                    <input type="radio" id="response5-3" name="question5" value="0">
+                    <label for="response5-3">Recyclops</label>
 
-            <!-- QUESTION 7 -->
-            <fieldset class="question7" id="question7">
-                
-                <p>Question #7</p>
+                    <input type="radio" id="response5-4" name="question5" value="0">
+                    <label for="response5-4">Santa</label>
+                </div>
+                <div class="error"></div>
 
-                <input type="radio" id="response7-1" name="question7" value="correct">
-                <label for="response7-1">Response 1</label>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question5" data-place="#question6">
+                </div>
 
-                <input type="radio" id="response7-2" name="question7" value="incorrect">
-                <label for="response7-2">Response 2</label>
+            </form>
 
-                <input type="radio" id="response7-3" name="question7" value="incorrect">
-                <label for="response7-3">Response 3</label>
+            <form action="" method="POST" name="question6" id="question6" class="question">
 
-                <input type="radio" id="response7-4" name="question7" value="incorrect">
-                <label for="response7-4">Response 4</label>
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/meredith.jpg" alt="Meredith Palmer">
+                </div>
 
-                <a href="#question8">Next question</a>
+                <p>Meredith is adament that she is not an alcholic. What does she admit to being addicted to?</p>
 
-            </fieldset>
+                <div class="options">
+                    <input type="radio" id="response6-1" name="question6" value="0">
+                    <label for="response6-1">Cigarettes</label>
 
-            <!-- QUESTION 8 -->
-            <fieldset class="question8" id="question8">
-                
-                <p>Question #8</p>
+                    <input type="radio" id="response6-2" name="question6" value="0">
+                    <label for="response6-2">Head-banging</label>
 
-                <input type="radio" id="response8-1" name="question8" value="correct">
-                <label for="response8-1">Response 1</label>
+                    <input type="radio" id="response6-3" name="question6" value="0">
+                    <label for="response6-3">Outback Steakhouse</label>
 
-                <input type="radio" id="response8-2" name="question8" value="incorrect">
-                <label for="response8-2">Response 2</label>
+                    <input type="radio" id="response6-4" name="question6" value="1">
+                    <label for="response6-4">Porn</label>
+                </div>
+                <div class="error"></div>
 
-                <input type="radio" id="response8-3" name="question8" value="incorrect">
-                <label for="response8-3">Response 3</label>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question6" data-place="#question7">
+                </div>
 
-                <input type="radio" id="response8-4" name="question8" value="incorrect">
-                <label for="response8-4">Response 4</label>
+            </form>
 
-                <a href="#question9">Next question</a>
+            <form action="" method="POST" name="question7" id="question7" class="question">
 
-            </fieldset>
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/creed.jpg" alt="Creed Bratton">
+                </div>
 
-            <!-- QUESTION 9 -->
-            <fieldset class="question9" id="question9">
-                
-                <p>Question #9</p>
+                <p>Which place makes the best kind of Pizza?</p>
 
-                <input type="radio" id="response9-1" name="question9" value="correct">
-                <label for="response9-1">Response 1</label>
+                <div class="options">
+                    <input type="radio" id="response7-1" name="question7" value="1">
+                    <label for="response7-1">Alfredo's Pizza Cafe</label>
 
-                <input type="radio" id="response9-2" name="question9" value="incorrect">
-                <label for="response9-2">Response 2</label>
+                    <input type="radio" id="response7-2" name="question7" value="0">
+                    <label for="response7-2">Pizza by Alfredo</label>
 
-                <input type="radio" id="response9-3" name="question9" value="incorrect">
-                <label for="response9-3">Response 3</label>
+                    <input type="radio" id="response7-3" name="question7" value="0">
+                    <label for="response7-3">Alfredo's Pizza Bistro</label>
 
-                <input type="radio" id="response9-4" name="question9" value="incorrect">
-                <label for="response9-4">Response 4</label>
+                    <input type="radio" id="response7-4" name="question7" value="0">
+                    <label for="response7-4">Pizza by Alejandro</label>
+                </div>
+                <div class="error"></div>
 
-                <a href="#question10">Next question</a>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question7" data-place="#question8">
+                </div>
 
-            </fieldset>
+            </form>
 
-            <!-- QUESTION 10 -->
-            <fieldset class="question10" id="question10">
-                
-                <p>Question #10</p>
+            <form action="" method="POST" name="question8" id="question8" class="question">
 
-                <input type="radio" id="response10-1" name="question10" value="correct">
-                <label for="response10-1">Response 1</label>
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/michael.png" alt="Michael Scott">
+                </div>
 
-                <input type="radio" id="response10-2" name="question10" value="incorrect">
-                <label for="response10-2">Response 2</label>
+                <p>Sandals Jamaica boasts Jamaica's largest indoor what?</p>
 
-                <input type="radio" id="response10-3" name="question10" value="incorrect">
-                <label for="response10-3">Response 3</label>
+                <div class="options">
+                    <input type="radio" id="response8-1" name="question8" value="0">
+                    <label for="response8-1">Rockclimbing wall</label>
 
-                <input type="radio" id="response10-4" name="question10" value="incorrect">
-                <label for="response10-4">Response 4</label>
+                    <input type="radio" id="response8-2" name="question8" value="0">
+                    <label for="response8-2">Miniput course</label>
 
-                <a href="#results">Get results</a>
+                    <input type="radio" id="response8-3" name="question8" value="1">
+                    <label for="response8-3">Freshwater pool</label>
 
-            </fieldset>
+                    <input type="radio" id="response8-4" name="question8" value="0">
+                    <label for="response8-4">Waterslide</label>
+                </div>
+                <div class="error"></div>
 
-        </form>
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question8" data-place="#question9">
+                </div>
 
-        <section class="results" id="results">YOU WIN</section>
+            </form>
 
+            <form action="" method="POST" name="question9" id="question9" class="question">
+
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/prison-mike.jpg" alt="Prison Mike">
+                </div>
+
+                <p>Prison Mike claims that in prison, they were guarded by what?</p>
+
+                <div class="options">
+                    <input type="radio" id="response9-1" name="question9" value="0">
+                    <label for="response9-1">Thestrals</label>
+
+                    <input type="radio" id="response9-2" name="question9" value="1">
+                    <label for="response9-2">Dementors</label>
+
+                    <input type="radio" id="response9-3" name="question9" value="0">
+                    <label for="response9-3">Death eaters</label>
+
+                    <input type="radio" id="response9-4" name="question9" value="0">
+                    <label for="response9-4">Voldemort</label>
+                </div>
+                <div class="error"></div>
+
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question9" data-place="#question10">
+                </div>
+
+            </form>
+
+            <form action="" method="POST" name="question10" id="question10" class="last-question">
+
+                <div data-aos="zoom-in-up">
+                    <img class="character" src="assets/andy.jpg" alt="Andy Bernard">
+                </div>
+
+                <p>Who is the worst regional manager Dunder Mifflin has ever seen?</p>
+
+                <div class="options">
+                    <input type="radio" id="response10-1" name="question10" value="1">
+                    <label for="response10-1">D'Angelo Vickers</label>
+
+                    <input type="radio" id="response10-2" name="question10" value="1">
+                    <label for="response10-2">Nelly</label>
+
+                    <input type="radio" id="response10-3" name="question10" value="1">
+                    <label for="response10-3">Andy</label>
+
+                    <input type="radio" id="response10-4" name="question10" value="1">
+                    <label for="response10-4">Robert California</label>
+                </div>
+                <div class="error"></div>
+
+                <div class="submit-container">
+                    <input type="submit" value="Next question" class="question10" data-place="#results">
+                </div>
+
+            </form>
+
+
+            <section class="results" id="results">
+                <!-- <img src="assets/noun_Award_1869738.svg" alt="outine of a trophy"> -->
+            </section>
+
+        </div>
     </main>
 
     <footer>
         <p>© Morgan Lockhart 2019</p>
     </footer>
 
-<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.1/smooth-scroll.min.js"></script>
+    <script>
 
-<script>
-    $(document).ready(function() {
-        // write code here
-    });
-</script>
+        // creating an empty object to contain all information pertaining to the game
+        let myGame = {};
+
+        // creating an empty array to hold the user's answers as they are submitted
+        myGame.answers = [];
+
+        // creating a function that logs the user's chosen answer, sends an error message if they don't select an answer, and also presents their result at the end
+        myGame.getAnswers = () => {
+
+            // ".question" is the class for the first 9 questions. when a user submits the question/form, start by preventing the default action of refreshing the page
+            $('.question').on('submit', function (event) {
+                event.preventDefault();
+
+                // someAnswer is going to be the user's chosen option for each of the 10 questions
+                let someAnswer = $(this).find('input:checked').val();
+
+
+                // if the user made a selection, then take the value of their selection and push it to the answers array    
+                if (someAnswer) {
+                    myGame.answers.push(Number(someAnswer));
+
+                    // once answer is logged, scroll down to the next question using the data-place attribute to define targets
+                    let button = $(this).find('[type=submit]');
+                    let target = button.data("place");
+                    $('html, body').animate(
+                        { scrollTop: $(target).offset().top },
+                        'slow',
+                        'swing',
+                        function () { }
+                    );
+
+                    // if the user does not make a selection, give them an error that says they have to make a selection
+                } else {
+                    let selectError = `Please pick one of these options!`;
+                    $(this).find('.error').html(`<p>${selectError}</p>`);
+                }
+            });
+
+            // the tenth question is treated a bit differently so it has a novel class of ".last-question". it will do all the same things as above but clicking it will also present the user's results
+            $('.last-question').on('submit', function (event) {
+                event.preventDefault();
+
+                let lastAnswer = $(this).find('input:checked').val();
+
+                if (lastAnswer) {
+                    myGame.answers.push(Number(lastAnswer));
+
+                    let button = $(this).find('[type=submit]');
+                    let target = button.data("place");
+                    $('html, body').animate(
+                        { scrollTop: $(target).offset().top },
+                        'slow',
+                        'swing',
+                        function () {
+
+                        }
+                    );
+                } else {
+                    let selectError = `Please pick one of these options!`;
+                    $('.error').html(`<p>${selectError}</p>`);
+                }
+
+                // once all 10 answers have been logged to the answers array, use the reduce function to add all 10 values in the array and return that value
+                let results = myGame.answers.reduce((accumulator, currentValue) => {
+                    return accumulator + currentValue;
+                });
+
+                // use that results value to display the user's result on the screen 
+                $('.results').append(`<p>You scored ${results} out of 10!</p>`)
+
+                if (results === 10) {
+                    $('.results').append(`<p>Mount this Trivia Genius Dundie upon your mantel with pride!</p>`)
+                } else if (results === 8 || results === 9) {
+                    $('.results').append(`<p>Congrats, you're one of the smartest in the office!</p>`)
+                } else if (results === 6 || results === 7) {
+                    $('.results').append(`<p>Well done! Not bad at all!</p>`)
+                } else if (results === 5) {
+                    $('.results').append(`<p>Could be better. Watch the show a few more dozen times and try again.</p>`)
+                } else {
+                    $('.results').append(`<p>Have you even seen the show?</p>`)
+                }
+            });
+        };
+
+        $(document).ready(function () {
+            myGame.getAnswers();
+            AOS.init();
+        });
+
+
+    </script>
 
 </body>
+
 </html>
