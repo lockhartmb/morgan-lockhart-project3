@@ -14,11 +14,9 @@ h1 {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5rem;
+    
+    @media (max-width: 600px) {
+        font-size: 2.5rem;   
     }
 }
 
@@ -38,5 +36,9 @@ h1 {
     &:active {
         transform: translate(5px, 5px);
         box-shadow: none;
+    }
+
+    &:focus {
+        border: 3px dotted $accent1;
     }
 }
