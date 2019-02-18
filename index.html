@@ -28,6 +28,8 @@
     <main>
         <div class="wrapper">
 
+            <!-- Each question is a form with four radio buttons and a submit button -->
+            <!-- Question 1 -->
             <form action="" method="POST" name="question1" id="question1" class="question visible">
                 
                 <div data-aos="zoom-in-up">
@@ -36,6 +38,7 @@
 
                 <p>How long does it take Dwight to skin a mule deer?</p>
 
+                <!-- Answer options -->
                 <div class="options">
                     <input type="radio" id="response1-1" name="question1" value="0">
                     <label for="response1-1">3.5 minutes</label>
@@ -49,14 +52,18 @@
                     <input type="radio" id="response1-4" name="question1" value="0">
                     <label for="response1-4">Around half an hour</label>
                 </div>
+
+                <!-- This is where the error message will be displayed if the user does not select an option -->
                 <div class="error"></div>
 
+                <!-- Submit button -->
                 <div class="submit-container">
                     <input type="submit" value="Next question" class="question1" data-place="#question2">
                 </div>
 
-            </form>
+            </form> <!-- End of question 1 -->
 
+            <!-- Quesiton 2 -->
             <form action="" method="POST" name="question2" id="question2" class="question">
 
                 <div data-aos="zoom-in-up">
@@ -78,6 +85,7 @@
                     <input type="radio" id="response2-4" name="question2" value="0">
                     <label for="response2-4">He is eaten by a wolf</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -86,6 +94,7 @@
 
             </form>
 
+            <!-- Question 3 -->
             <form action="" method="POST" name="question3" id="question3" class="question">
 
                 <div data-aos="zoom-in-up">
@@ -107,6 +116,7 @@
                     <input type="radio" id="response3-4" name="question3" value="1">
                     <label for="response3-4">Morgan</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -115,6 +125,7 @@
 
             </form>
 
+            <!-- Question 4 -->
             <form action="" method="POST" name="question4" id="question4" class="question">
 
                 <div data-aos="zoom-in-up">
@@ -136,6 +147,7 @@
                     <input type="radio" id="response4-4" name="question4" value="0">
                     <label for="response4-4">over-doer</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -144,6 +156,7 @@
 
             </form>
 
+            <!-- Question 5 -->
             <form action="" method="POST" name="question5" id="question5" class="question">
 
                 <div data-aos="zoom-in-up">
@@ -165,6 +178,7 @@
                     <input type="radio" id="response5-4" name="question5" value="0">
                     <label for="response5-4">Santa</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -173,13 +187,14 @@
 
             </form>
 
+            <!-- Question 6 -->
             <form action="" method="POST" name="question6" id="question6" class="question">
 
                 <div data-aos="zoom-in-up">
                     <img class="character" src="assets/meredith.jpg" alt="Meredith Palmer">
                 </div>
 
-                <p>Meredith is adamant that she is not an alcholic. What does she admit to being addicted to?</p>
+                <p>At the Christmas party, Meredith is adamant that she is not an alcholic. What does she admit to being addicted to?</p>
 
                 <div class="options">
                     <input type="radio" id="response6-1" name="question6" value="0">
@@ -194,6 +209,7 @@
                     <input type="radio" id="response6-4" name="question6" value="1">
                     <label for="response6-4">Porn</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -202,6 +218,7 @@
 
             </form>
 
+            <!-- Question 7 -->
             <form action="" method="POST" name="question7" id="question7" class="question">
 
                 <div data-aos="zoom-in-up">
@@ -223,6 +240,7 @@
                     <input type="radio" id="response7-4" name="question7" value="0">
                     <label for="response7-4">Pizza by Alejandro</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -231,6 +249,7 @@
 
             </form>
 
+            <!-- Quesiton 8 -->
             <form action="" method="POST" name="question8" id="question8" class="question">
 
                 <div data-aos="zoom-in-up">
@@ -252,6 +271,7 @@
                     <input type="radio" id="response8-4" name="question8" value="0">
                     <label for="response8-4">Waterslide</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -260,6 +280,7 @@
 
             </form>
 
+            <!-- Question 9 -->
             <form action="" method="POST" name="question9" id="question9" class="question">
 
                 <div data-aos="zoom-in-up">
@@ -281,6 +302,7 @@
                     <input type="radio" id="response9-4" name="question9" value="0">
                     <label for="response9-4">Voldemort</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -289,6 +311,7 @@
 
             </form>
 
+            <!-- Question 10 -->
             <form action="" method="POST" name="question10" id="question10" class="last-question">
 
                 <div data-aos="zoom-in-up">
@@ -310,6 +333,7 @@
                     <input type="radio" id="response10-4" name="question10" value="1">
                     <label for="response10-4">Robert California</label>
                 </div>
+
                 <div class="error"></div>
 
                 <div class="submit-container">
@@ -318,23 +342,26 @@
 
             </form>
 
+            <!-- This section is dynamically populated with the user's score and a statement about how well they did -->
             <section class="results" id="results">
-                <div class="inside-results">
-                    
-                </div>
+                <div class="inside-results"><!--This is where the user's results will be displayed--></div>
             </section>
 
-        </div>
+        </div> <!-- .../wrapper -->
     </main>
 
     <footer>
         <p>© Morgan Lockhart 2019</p>
     </footer>
 
+    <!-- Script tag for jQuery library -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'
         integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+
+    <!-- Script tag for Animate on Scroll library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Script tag for all custom JavaScrpt/jQuery that I wrote -->
     <script>
 
         // creating an empty object to contain all information pertaining to the game
@@ -343,10 +370,10 @@
         // creating an empty array to hold the user's answers as they are submitted
         myGame.answers = [];
 
-        // creating a function that logs the user's chosen answer, sends an error message if they don't select an answer, and also presents their result at the end
+        // creating a function that logs the user's chosen answer, displays an error message if they don't select an answer, and also presents their result at the end
         myGame.getAnswers = () => {
 
-            // ".question" is the class for the first 9 questions. when a user submits the question/form, start by preventing the default action of refreshing the page
+            // ".question" is the class for the first 9 questions (form elements). when a user submits the question/form, start by preventing the default action of refreshing the page
             $('.question').on('submit', function (event) {
                 event.preventDefault();
 
@@ -357,8 +384,8 @@
                 if (someAnswer) {
 
                     myGame.answers.push(Number(someAnswer));
-                    console.log(myGame.answers);
-                    // once answer is logged, scroll down to the next question using the data-place attribute to define targets
+
+                    // once answer is logged, scroll down to the next question using the data-place attribute to define the target
                     let button = $(this).find('[type=submit]');
                     let target = button.data("place");
                     $('html, body').animate(
@@ -368,7 +395,9 @@
                         function () {}
                     );
 
+                    // to further avoid a user being able to skip a question without answering, all questions are invisible until they hit "next question", at which point the class of "visible" is applied to the next question
                     $(this).next('form').addClass('visible');
+
                     // if the user does not make a selection, give them an error that says they have to make a selection
                 } else {
                     let selectError = `Please pick one of these options!`;
@@ -391,10 +420,9 @@
                         { scrollTop: $(target).offset().top },
                         'slow',
                         'swing',
-                        function () {
-
-                        }
+                        function () {}
                     );
+
                 } else {
                     let selectError = `Please pick one of these options!`;
                     $('.error').html(`<p>${selectError}</p>`);
@@ -406,35 +434,28 @@
                 });
 
                 // use that results value to display the user's result on the screen 
+                let score = `<p>You scored ${results} out of 10.</p>`;
 
-                
-                    
-                        
-                            
-                                
-
-                $('.inside-results').append(`<p>You scored ${results} out of 10.</p>`)
-
-                if (results >10) {
-                    $('.inside-results').append(`<p>Sorry, something must have gone wrong. Refresh the page and take the quiz again.</p>`);
+                if (results >10 || myGame.answers.length >10) {
+                    $('.inside-results').append(`<p>Sorry, something went wrong. Refresh the page and take the quiz again.</p>`);
                 } else if (results === 9 || results === 10) {
-                    $('.inside-results').append(`
+                    $('.inside-results').append(`${score}
                     <p>Mount this Trivia Genius Dundie upon your mantel with pride!</p>
                     <img src="assets/dundie-award.webp" alt="Michael Scott presenting a Dundie Award trophy">`);
                 } else if (results === 7 || results === 8) {
-                    $('.inside-results').append(`
+                    $('.inside-results').append(`${score}
                     <p>Congrats, you're one of the smartest in the office!</p>
                     <img src="assets/oscar-dance.gif" alt="Oscar Martinez dancing and saying YOLO">`);
                 } else if (results === 4 || results === 5 || results === 6) {
-                    $('.inside-results').append(`
+                    $('.inside-results').append(`${score}
                     <p>Well done! Not bad at all.</p>
                     <img src="assets/not-bad.jpg" alt="Michael Scott saying not bad">`);
                 } else if (results === 2 || results === 3) {
-                    $('.inside-results').append(`
+                    $('.inside-results').append(`${score}
                     <p>Could be better. Watch the show a few more dozen times and try again!</p>
                     <img src="assets/harder.gif" alt="Gabe Lewis saying that Michael is making pizza-making harder than it has to be">`);
                 } else {
-                    $('.inside-results').append(`
+                    $('.inside-results').append(`${score}
                     <p>Have you even seen the show?</p>
                     <img src="assets/kevin-patience.jpg" alt="Kevin Malone saying he has very little patience for stupidity">`);
                 }

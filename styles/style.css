@@ -263,7 +263,9 @@ form {
     position: absolute;
     left: -5%; }
   form img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 0 #e1851e;
+    box-shadow: 5px 5px 0 #e1851e; }
 
 @media (max-width: 750px) {
   form {
@@ -357,7 +359,7 @@ label {
   color: #e1851e; }
 
 .results {
-  min-height: 100vh;
+  min-height: calc(100vh - 34.5px);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;

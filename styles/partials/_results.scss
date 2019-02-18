@@ -1,5 +1,5 @@
 .results {
-    min-height: 100vh;
+    min-height: calc(100vh - 34.5px);
     text-align: center;
     display: flex;
     flex-direction: column;
