@@ -20,10 +20,6 @@ form {
     }
 }
 
-.visible {
-    opacity: 1;
-}
-
 @media (max-width: 750px) {
     form {
         padding-left: 0;
@@ -35,8 +31,8 @@ form {
     }
 }
 
-input:focus {
-    border: 3px dotted $accent1;
+.visible {
+opacity: 1;
 }
 
 [type="radio"] {
@@ -71,14 +67,14 @@ label {
         height: 24px;
         left: 5px;
     }
-
-    &:focus {
-        border: 3px dotted $accent1;
-    }
 }
 
 [type="radio"]:checked + label::after {
     background-color: black;
+}
+
+[type="radio"]:focus + label::before {
+    border: 2px solid $accent1;
 }
 
 .options {
@@ -96,12 +92,12 @@ label {
     border: 3px solid black;
     border-radius: 10px;
     background-color: white;
-    box-shadow: none;
+    box-shadow: 5px 5px 0 $accent1;
     transform: translate(0);
-    transition: box-shadow $transition, transform $transition;
+    transition: background-color $transition, transform $transition;
 
     &:hover {
-        box-shadow: 5px 5px 0 $accent1;
+        background-color: rgba($accent1, 0.2);
     }
 
     &:active {
@@ -110,7 +106,7 @@ label {
     }
 
     &:focus {
-        border: 3px dotted $accent1;
+        border: 3px solid $accent1;
     }
 }
 

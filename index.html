@@ -20,10 +20,7 @@
 
     <header>
         <div class="wrapper">
-            <h1>World's</h1>
-            <h1>best</h1>
-            <h1>The Office</h1>
-            <h1>trivia game</h1>
+            <h1>World's <span>best</span><span>The Office</span> trivia game</h1>
             <a href="#question1" class="take-quiz">Take the quiz!</a>
         </div>
     </header>
@@ -40,7 +37,7 @@
                 <p>How long does it take Dwight to skin a mule deer?</p>
 
                 <div class="options">
-                    <input type="radio" id="response1-1" name="question1" value="0" checked="true">
+                    <input type="radio" id="response1-1" name="question1" value="0">
                     <label for="response1-1">3.5 minutes</label>
 
                     <input type="radio" id="response1-2" name="question1" value="0">
@@ -69,7 +66,7 @@
                 <p>What are the consequences when a Schrute boy does not learn his rules?</p>
 
                 <div class="options">
-                    <input type="radio" id="response2-1" name="question2" value="0" checked="true">
+                    <input type="radio" id="response2-1" name="question2" value="0">
                     <label for="response2-1">He does Michael's laundry for a month</label>
 
                     <input type="radio" id="response2-2" name="question2" value="1">
@@ -98,7 +95,7 @@
                 <p>What is Pam's middle name?</p>
 
                 <div class="options">
-                    <input type="radio" id="response3-1" name="question3" value="0" checked="true">
+                    <input type="radio" id="response3-1" name="question3" value="0">
                     <label for="response3-1">Jenny</label>
 
                     <input type="radio" id="response3-2" name="question3" value="0">
@@ -127,7 +124,7 @@
                 <p>Kevin describes himself as a "textbook _____"</p>
 
                 <div class="options">
-                    <input type="radio" id="response4-1" name="question4" value="1" checked="true">
+                    <input type="radio" id="response4-1" name="question4" value="1">
                     <label for="response4-1">over-thinker</label>
 
                     <input type="radio" id="response4-2" name="question4" value="0">
@@ -156,7 +153,7 @@
                 <p>What costume wins Oscar the Halloween costume contest?</p>
 
                 <div class="options">
-                    <input type="radio" id="response5-1" name="question5" value="0" checked="true">
+                    <input type="radio" id="response5-1" name="question5" value="0">
                     <label for="response5-1">Gordon Gecko</label>
 
                     <input type="radio" id="response5-2" name="question5" value="1">
@@ -182,10 +179,10 @@
                     <img class="character" src="assets/meredith.jpg" alt="Meredith Palmer">
                 </div>
 
-                <p>Meredith is adament that she is not an alcholic. What does she admit to being addicted to?</p>
+                <p>Meredith is adamant that she is not an alcholic. What does she admit to being addicted to?</p>
 
                 <div class="options">
-                    <input type="radio" id="response6-1" name="question6" value="0" checked="true">
+                    <input type="radio" id="response6-1" name="question6" value="0">
                     <label for="response6-1">Cigarettes</label>
 
                     <input type="radio" id="response6-2" name="question6" value="0">
@@ -214,7 +211,7 @@
                 <p>Which place makes the best kind of Pizza?</p>
 
                 <div class="options">
-                    <input type="radio" id="response7-1" name="question7" value="1" checked="true">
+                    <input type="radio" id="response7-1" name="question7" value="1">
                     <label for="response7-1">Alfredo's Pizza Cafe</label>
 
                     <input type="radio" id="response7-2" name="question7" value="0">
@@ -243,7 +240,7 @@
                 <p>Sandals Jamaica boasts Jamaica's largest indoor what?</p>
 
                 <div class="options">
-                    <input type="radio" id="response8-1" name="question8" value="0" checked="true">
+                    <input type="radio" id="response8-1" name="question8" value="0">
                     <label for="response8-1">Rockclimbing wall</label>
 
                     <input type="radio" id="response8-2" name="question8" value="0">
@@ -272,7 +269,7 @@
                 <p>Prison Mike claims that in prison, they were guarded by what?</p>
 
                 <div class="options">
-                    <input type="radio" id="response9-1" name="question9" value="0" checked="true">
+                    <input type="radio" id="response9-1" name="question9" value="0">
                     <label for="response9-1">Thestrals</label>
 
                     <input type="radio" id="response9-2" name="question9" value="1">
@@ -301,7 +298,7 @@
                 <p>Who is the worst regional manager Dunder Mifflin has ever seen?</p>
 
                 <div class="options">
-                    <input type="radio" id="response10-1" name="question10" value="1" checked="true">
+                    <input type="radio" id="response10-1" name="question10" value="1">
                     <label for="response10-1">D'Angelo Vickers</label>
 
                     <input type="radio" id="response10-2" name="question10" value="1">
@@ -322,6 +319,9 @@
             </form>
 
             <section class="results" id="results">
+                <div class="inside-results">
+                    
+                </div>
             </section>
 
         </div>
@@ -357,7 +357,7 @@
                 if (someAnswer) {
 
                     myGame.answers.push(Number(someAnswer));
-
+                    console.log(myGame.answers);
                     // once answer is logged, scroll down to the next question using the data-place attribute to define targets
                     let button = $(this).find('[type=submit]');
                     let target = button.data("place");
@@ -413,28 +413,28 @@
                             
                                 
 
-                $('.results').append(`<p>You scored ${results} out of 10!</p>`)
+                $('.inside-results').append(`<p>You scored ${results} out of 10.</p>`)
 
                 if (results >10) {
-                    $('.results').append(`<p>Sorry, something must have gone wrong. Refresh the page and take the quiz again.</p>`);
-                } else if (results === 10) {
-                    $('.results').append(`
+                    $('.inside-results').append(`<p>Sorry, something must have gone wrong. Refresh the page and take the quiz again.</p>`);
+                } else if (results === 9 || results === 10) {
+                    $('.inside-results').append(`
                     <p>Mount this Trivia Genius Dundie upon your mantel with pride!</p>
                     <img src="assets/dundie-award.webp" alt="Michael Scott presenting a Dundie Award trophy">`);
-                } else if (results === 8 || results === 9) {
-                    $('.results').append(`
+                } else if (results === 7 || results === 8) {
+                    $('.inside-results').append(`
                     <p>Congrats, you're one of the smartest in the office!</p>
                     <img src="assets/oscar-dance.gif" alt="Oscar Martinez dancing and saying YOLO">`);
-                } else if (results === 6 || results === 7) {
-                    $('.results').append(`
-                    <p>Well done! Not bad at all!</p>
+                } else if (results === 4 || results === 5 || results === 6) {
+                    $('.inside-results').append(`
+                    <p>Well done! Not bad at all.</p>
                     <img src="assets/not-bad.jpg" alt="Michael Scott saying not bad">`);
-                } else if (results === 5) {
-                    $('.results').append(`
-                    <p>Could be better. Watch the show a few more dozen times and try again.</p>
+                } else if (results === 2 || results === 3) {
+                    $('.inside-results').append(`
+                    <p>Could be better. Watch the show a few more dozen times and try again!</p>
                     <img src="assets/harder.gif" alt="Gabe Lewis saying that Michael is making pizza-making harder than it has to be">`);
                 } else {
-                    $('.results').append(`
+                    $('.inside-results').append(`
                     <p>Have you even seen the show?</p>
                     <img src="assets/kevin-patience.jpg" alt="Kevin Malone saying he has very little patience for stupidity">`);
                 }
