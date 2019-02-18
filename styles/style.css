@@ -306,7 +306,11 @@ label {
     position: absolute;
     width: 24px;
     height: 24px;
-    left: 5px; }
+    left: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 [type="radio"]:checked + label::after {
   background-color: black; }

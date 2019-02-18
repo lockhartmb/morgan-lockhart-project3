@@ -66,6 +66,8 @@ label {
         width: 24px;
         height: 24px;
         left: 5px;
+        top: 50%; 
+        transform: translateY(-50%);
     }
 }
 
