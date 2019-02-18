@@ -1,12 +1,18 @@
-section {
+.results {
     min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     p {
         font-size: 1.8rem;
+        padding: 10px 0;
+    }
+
+    img {
+        width: 65%;
     }
 }
+

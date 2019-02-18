@@ -321,10 +321,7 @@
 
             </form>
 
-
             <section class="results" id="results">
-                <p>Congratulations!</p>
-                <!-- <img src="assets/noun_Award_1869738.svg" alt="outine of a trophy"> -->
             </section>
 
         </div>
@@ -358,7 +355,7 @@
 
                 // if the user made a selection, then take the value of their selection and push it to the answers array    
                 if (someAnswer) {
-                    
+
                     myGame.answers.push(Number(someAnswer));
 
                     // once answer is logged, scroll down to the next question using the data-place attribute to define targets
@@ -409,20 +406,37 @@
                 });
 
                 // use that results value to display the user's result on the screen 
+
+                
+                    
+                        
+                            
+                                
+
                 $('.results').append(`<p>You scored ${results} out of 10!</p>`)
 
                 if (results >10) {
-                    $('.results').append(`<p>Sorry, something must have gone wrong. Refresh the page and take the quiz again.</p>`)
+                    $('.results').append(`<p>Sorry, something must have gone wrong. Refresh the page and take the quiz again.</p>`);
                 } else if (results === 10) {
-                    $('.results').append(`<p>Mount this Trivia Genius Dundie upon your mantel with pride!</p>`)
+                    $('.results').append(`
+                    <p>Mount this Trivia Genius Dundie upon your mantel with pride!</p>
+                    <img src="assets/dundie-award.webp" alt="Michael Scott presenting a Dundie Award trophy">`);
                 } else if (results === 8 || results === 9) {
-                    $('.results').append(`<p>Congrats, you're one of the smartest in the office!</p>`)
+                    $('.results').append(`
+                    <p>Congrats, you're one of the smartest in the office!</p>
+                    <img src="assets/oscar-dance.gif" alt="Oscar Martinez dancing and saying YOLO">`);
                 } else if (results === 6 || results === 7) {
-                    $('.results').append(`<p>Well done! Not bad at all!</p>`)
+                    $('.results').append(`
+                    <p>Well done! Not bad at all!</p>
+                    <img src="assets/not-bad.jpg" alt="Michael Scott saying not bad">`);
                 } else if (results === 5) {
-                    $('.results').append(`<p>Could be better. Watch the show a few more dozen times and try again.</p>`)
+                    $('.results').append(`
+                    <p>Could be better. Watch the show a few more dozen times and try again.</p>
+                    <img src="assets/harder.gif" alt="Gabe Lewis saying that Michael is making pizza-making harder than it has to be">`);
                 } else {
-                    $('.results').append(`<p>Have you even seen the show?</p>`)
+                    $('.results').append(`
+                    <p>Have you even seen the show?</p>
+                    <img src="assets/kevin-patience.jpg" alt="Kevin Malone saying he has very little patience for stupidity">`);
                 }
             });
         };
