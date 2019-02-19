@@ -188,6 +188,11 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  header .wrapper {
+    border: 5px solid #e1851e;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto; }
   header h1 {
     font-size: 4rem;
     text-transform: uppercase;
@@ -336,7 +341,7 @@ form {
   opacity: 1; }
 
 .results {
-  min-height: calc(100vh - 34.5px);
+  min-height: calc(100vh - 48.5px);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;

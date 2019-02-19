@@ -225,7 +225,7 @@
                     <img class="character" src="assets/creed.jpg" alt="Creed Bratton">
                 </div>
 
-                <p>Which place makes the best kind of Pizza?</p>
+                <p>Which place makes the best pizza?</p>
 
                 <div class="options">
                     <input type="radio" id="response7-1" name="question7" value="1">
@@ -256,7 +256,7 @@
                     <img class="character" src="assets/michael.png" alt="Michael Scott">
                 </div>
 
-                <p>Sandals Jamaica boasts Jamaica's largest indoor what?</p>
+                <p>Sandals Jamaica boasts Jamaica's largest what?</p>
 
                 <div class="options">
                     <input type="radio" id="response8-1" name="question8" value="0">
@@ -351,7 +351,7 @@
     </main>
 
     <footer>
-        <p>© Morgan Lockhart 2019</p>
+        <p>Content from The Office. Built by Morgan Lockhart, 2019</p>
     </footer>
 
     <!-- Script tag for jQuery library -->
@@ -452,15 +452,19 @@
                 // this first scenario shouldn't actually happen now that I've rewritten how results are stored, but I left it there just in case
                 if (results > 10) {
                     $('.inside-results').html(`<p>Sorry, something went wrong. Refresh the page and take the quiz again.</p>`);
-                } else if (results === 9 || results === 10) {
+                } else if (results === 10) {
                     $('.inside-results').html(`${score}
                     <p>Mount this Trivia Genius Dundie upon your mantel with pride!</p>
                     <img src="assets/dundie-award.webp" alt="Michael Scott presenting a Dundie Award trophy">`);
-                } else if (results === 7 || results === 8) {
+                } else if (results === 8 || results === 9) {
                     $('.inside-results').html(`${score}
                     <p>Congrats, you're one of the smartest in the office!</p>
                     <img src="assets/oscar-dance.gif" alt="Oscar Martinez dancing and saying YOLO">`);
-                } else if (results === 4 || results === 5 || results === 6) {
+                } else if (results === 6 || results === 7) {
+                    $('.inside-results').html(`${score}
+                    <p>You're no idiot!</p>
+                    <img src="assets/dwight-idiot.jpg" alt="Dwight Schrute saying that he would never do what an idiot does">`);
+                } else if (results === 4 || results === 5) {
                     $('.inside-results').html(`${score}
                     <p>Well done! Not bad at all.</p>
                     <img src="assets/not-bad.jpg" alt="Michael Scott saying not bad">`);

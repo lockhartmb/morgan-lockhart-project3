@@ -8,6 +8,13 @@ header {
     flex-direction: column;
     justify-content: center;
     
+    .wrapper {
+        border: 5px solid #e1851e;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
     h1 {
         font-size: 4rem;
         text-transform: uppercase;
