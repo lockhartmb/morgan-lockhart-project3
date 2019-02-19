@@ -2,19 +2,5 @@
 
 $accent1: rgb(225, 133, 30);
 $transition: 0.15s ease-in-out;
-
-// MIXINS
-
-
-// ANIMATIONS
-
-@keyframes fade-in {
-
-    0% {
-        opacity: 0;
-    }
-    
-    100% {
-        opacity: 1;
-    }
-}
+$header-font: 'Fira Sans', sans-serif;
+$main-font: 'Roboto', sans-serif;
