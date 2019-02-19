@@ -341,7 +341,7 @@ form {
   opacity: 1; }
 
 .results {
-  min-height: calc(100vh - 48.5px);
+  min-height: calc(100vh - 77px);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
